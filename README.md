@@ -1,5 +1,5 @@
 
-![NanoChat](images/nano.png)
+![NanoChat](nano.png)
 
 # NanoChat on Google Colab T4
 

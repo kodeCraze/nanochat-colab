@@ -1,3 +1,6 @@
+
+![NanoChat](images/nano.png)
+
 # NanoChat on Google Colab T4
 
 Training GPT-style language models on free Google Colab T4 GPU.

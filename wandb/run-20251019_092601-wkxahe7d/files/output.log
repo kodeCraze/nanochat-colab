@@ -1,0 +1,108 @@
+Vocab size: 32,000
+num_layers: 2
+model_dim: 128
+num_heads: 1
+num_kv_heads: 1
+Tokens / micro-batch / rank: 2 x 512 = 1,024
+Tokens / micro-batch: 1,024
+Total batch size 32,768 => gradient accumulation steps: 32
+Number of parameters: 8,585,216
+Estimated FLOPs per token: 2.850816e+07
+Using user-provided number of iterations: 40
+Total number of training tokens: 1,310,720
+Tokens : Params ratio: 0.15
+Total training FLOPs estimate: 3.736622e+13
+Scaling the LR for the AdamW parameters ∝1/√(128/768) = 2.449490
+W1019 09:26:06.875000 12418 .venv/lib/python3.10/site-packages/torch/_inductor/utils.py:1436] [0/0] Not enough SMs to use max_autotune_gemm mode
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+Step 00000 | Validation bpb: 3.2725
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+step 00000/00040 (0.00%) | loss: 10.373490 | lrm: 1.00 | dt: 1504.84ms | tok/sec: 680 | mfu: 0.06 | total time: 0.00m
+step 00001/00040 (2.50%) | loss: 10.347248 | lrm: 1.00 | dt: 821.63ms | tok/sec: 1,246 | mfu: 0.11 | total time: 0.00m
+step 00002/00040 (5.00%) | loss: 10.125658 | lrm: 1.00 | dt: 838.92ms | tok/sec: 1,220 | mfu: 0.11 | total time: 0.00m
+step 00003/00040 (7.50%) | loss: 9.840278 | lrm: 1.00 | dt: 971.47ms | tok/sec: 1,054 | mfu: 0.10 | total time: 0.00m
+step 00004/00040 (10.00%) | loss: 9.523165 | lrm: 1.00 | dt: 838.17ms | tok/sec: 1,221 | mfu: 0.11 | total time: 0.00m
+step 00005/00040 (12.50%) | loss: 9.241834 | lrm: 1.00 | dt: 906.96ms | tok/sec: 1,129 | mfu: 0.10 | total time: 0.00m
+step 00006/00040 (15.00%) | loss: 9.059701 | lrm: 1.00 | dt: 842.56ms | tok/sec: 1,215 | mfu: 0.11 | total time: 0.00m
+step 00007/00040 (17.50%) | loss: 8.894033 | lrm: 1.00 | dt: 863.25ms | tok/sec: 1,186 | mfu: 0.11 | total time: 0.00m
+step 00008/00040 (20.00%) | loss: 8.769078 | lrm: 1.00 | dt: 842.12ms | tok/sec: 1,215 | mfu: 0.11 | total time: 0.00m
+step 00009/00040 (22.50%) | loss: 8.675379 | lrm: 1.00 | dt: 839.55ms | tok/sec: 1,219 | mfu: 0.11 | total time: 0.00m
+Step 00010 | Validation bpb: 2.5311
+/content/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/compile_fx.py:2509: UserWarning: Tesla T4 does not support bfloat16 compilation natively, skipping
+  warnings.warn(
+<|bos|>The capital of France is the the the the the the the the the the the the the the the the
+<|bos|>The chemical symbol of gold is the the the the the the the the the the the the the the the the
+<|bos|>If yesterday was Friday, then tomorrow will be the the the the the the the the the the the the the the the the
+<|bos|>The opposite of hot is the the the the the the the the the the the the the the the the
+<|bos|>The planets of the solar system are: the the the the the the the the the the the the the the the the
+<|bos|>My favorite color is the the the the the the the the the the the the the the the the
+<|bos|>If 5*x + 3 = 13, then x is the the the the the the the the the the the the the the the the
+step 00010/00040 (25.00%) | loss: 8.601309 | lrm: 1.00 | dt: 861.52ms | tok/sec: 1,188 | mfu: 0.11 | total time: 0.00m
+step 00011/00040 (27.50%) | loss: 8.517030 | lrm: 1.00 | dt: 842.37ms | tok/sec: 1,215 | mfu: 0.11 | total time: 0.01m
+step 00012/00040 (30.00%) | loss: 8.436567 | lrm: 1.00 | dt: 842.41ms | tok/sec: 1,215 | mfu: 0.11 | total time: 0.03m
+step 00013/00040 (32.50%) | loss: 8.417503 | lrm: 1.00 | dt: 866.18ms | tok/sec: 1,182 | mfu: 0.11 | total time: 0.04m
+step 00014/00040 (35.00%) | loss: 8.342398 | lrm: 1.00 | dt: 844.78ms | tok/sec: 1,212 | mfu: 0.11 | total time: 0.06m
+step 00015/00040 (37.50%) | loss: 8.300367 | lrm: 1.00 | dt: 843.67ms | tok/sec: 1,213 | mfu: 0.11 | total time: 0.07m
+step 00016/00040 (40.00%) | loss: 8.230422 | lrm: 1.00 | dt: 868.04ms | tok/sec: 1,179 | mfu: 0.11 | total time: 0.09m
+step 00017/00040 (42.50%) | loss: 8.195628 | lrm: 1.00 | dt: 850.32ms | tok/sec: 1,204 | mfu: 0.11 | total time: 0.10m
+step 00018/00040 (45.00%) | loss: 8.154443 | lrm: 1.00 | dt: 846.31ms | tok/sec: 1,209 | mfu: 0.11 | total time: 0.11m
+step 00019/00040 (47.50%) | loss: 8.104867 | lrm: 1.00 | dt: 952.72ms | tok/sec: 1,074 | mfu: 0.10 | total time: 0.13m
+Step 00020 | Validation bpb: 2.4765
+<|bos|>The capital of France is the the the the the the the the the the the the the the the the
+<|bos|>The chemical symbol of gold is the the the the the the the the the the the the the the the the
+<|bos|>If yesterday was Friday, then tomorrow will be the the the the the the the the the the the the the the the the
+<|bos|>The opposite of hot is the the the the the the the the the the the the the the the the
+<|bos|>The planets of the solar system are: the the the the the the the the the the the the the the the the
+<|bos|>My favorite color is the the the the the the the the the the the the the the the the
+<|bos|>If 5*x + 3 = 13, then x is the the the the the the the the the the the the the the the the
+step 00020/00040 (50.00%) | loss: 8.127862 | lrm: 1.00 | dt: 855.45ms | tok/sec: 1,197 | mfu: 0.11 | total time: 0.14m
+step 00021/00040 (52.50%) | loss: 8.129809 | lrm: 1.00 | dt: 843.48ms | tok/sec: 1,214 | mfu: 0.11 | total time: 0.16m
+step 00022/00040 (55.00%) | loss: 8.086315 | lrm: 1.00 | dt: 842.77ms | tok/sec: 1,215 | mfu: 0.11 | total time: 0.17m
+step 00023/00040 (57.50%) | loss: 8.029057 | lrm: 1.00 | dt: 891.69ms | tok/sec: 1,148 | mfu: 0.11 | total time: 0.19m
+step 00024/00040 (60.00%) | loss: 8.026832 | lrm: 1.00 | dt: 847.77ms | tok/sec: 1,207 | mfu: 0.11 | total time: 0.20m
+step 00025/00040 (62.50%) | loss: 7.967959 | lrm: 1.00 | dt: 844.36ms | tok/sec: 1,212 | mfu: 0.11 | total time: 0.21m
+step 00026/00040 (65.00%) | loss: 7.910204 | lrm: 1.00 | dt: 962.72ms | tok/sec: 1,063 | mfu: 0.10 | total time: 0.23m
+step 00027/00040 (67.50%) | loss: 7.907212 | lrm: 1.00 | dt: 845.65ms | tok/sec: 1,210 | mfu: 0.11 | total time: 0.24m
+step 00028/00040 (70.00%) | loss: 7.908060 | lrm: 1.00 | dt: 840.45ms | tok/sec: 1,218 | mfu: 0.11 | total time: 0.26m
+step 00029/00040 (72.50%) | loss: 7.904034 | lrm: 1.00 | dt: 845.92ms | tok/sec: 1,210 | mfu: 0.11 | total time: 0.27m
+Step 00030 | Validation bpb: 2.4504
+<|bos|>The capital of France is,,,,,,,,,,,,,,,,
+<|bos|>The chemical symbol of gold is,,,,,,,,,,,,,,,,
+<|bos|>If yesterday was Friday, then tomorrow will be,,,,,,,,,,,,,,,,
+<|bos|>The opposite of hot is,,,,,,,,,,,,,,,,
+<|bos|>The planets of the solar system are:,,,,,,,,,,,,,,,,
+<|bos|>My favorite color is,,,,,,,,,,,,,,,,
+<|bos|>If 5*x + 3 = 13, then x is,,,,,,,,,,,,,,,,
+step 00030/00040 (75.00%) | loss: 7.901171 | lrm: 1.00 | dt: 840.40ms | tok/sec: 1,218 | mfu: 0.11 | total time: 0.29m
+step 00031/00040 (77.50%) | loss: 7.892643 | lrm: 1.00 | dt: 973.90ms | tok/sec: 1,051 | mfu: 0.10 | total time: 0.30m
+step 00032/00040 (80.00%) | loss: 7.924214 | lrm: 1.00 | dt: 846.76ms | tok/sec: 1,209 | mfu: 0.11 | total time: 0.32m
+step 00033/00040 (82.50%) | loss: 7.926467 | lrm: 0.88 | dt: 854.94ms | tok/sec: 1,197 | mfu: 0.11 | total time: 0.33m
+step 00034/00040 (85.00%) | loss: 7.895240 | lrm: 0.75 | dt: 847.06ms | tok/sec: 1,208 | mfu: 0.11 | total time: 0.35m
+step 00035/00040 (87.50%) | loss: 7.913466 | lrm: 0.62 | dt: 979.94ms | tok/sec: 1,044 | mfu: 0.10 | total time: 0.36m
+step 00036/00040 (90.00%) | loss: 7.905797 | lrm: 0.50 | dt: 848.02ms | tok/sec: 1,207 | mfu: 0.11 | total time: 0.38m
+step 00037/00040 (92.50%) | loss: 7.874825 | lrm: 0.38 | dt: 847.51ms | tok/sec: 1,208 | mfu: 0.11 | total time: 0.39m
+step 00038/00040 (95.00%) | loss: 7.843196 | lrm: 0.25 | dt: 845.43ms | tok/sec: 1,211 | mfu: 0.11 | total time: 0.40m
+step 00039/00040 (97.50%) | loss: 7.825593 | lrm: 0.12 | dt: 844.98ms | tok/sec: 1,211 | mfu: 0.11 | total time: 0.42m
+Step 00040 | Validation bpb: 2.4188
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/content/nanochat/scripts/base_train.py", line 199, in <module>
+    results = evaluate_model(orig_model, tokenizer, device, max_per_task=core_metric_max_per_task)
+  File "/content/nanochat/scripts/base_eval.py", line 42, in evaluate_model
+    with open(config_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/content/drive/MyDrive/nanochat_colab/cache/eval_bundle/core.yaml'

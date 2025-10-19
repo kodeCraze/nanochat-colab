@@ -195,8 +195,12 @@ for step in range(num_iterations + 1):
     # use the original uncompiled model because the inputs keep changing shape
     if last_step or (step > 0 and step % core_metric_every == 0):
         model.eval()
-        with autocast_ctx:
-            results = evaluate_model(orig_model, tokenizer, device, max_per_task=core_metric_max_per_task)
+        try:
+            with autocast_ctx:
+                results = evaluate_model(orig_model, tokenizer, device, max_per_task=core_metric_max_per_task)
+        except FileNotFoundError as e:
+            print0(f"⚠️  Skipping CORE eval (eval_bundle not found): {e}")
+            results = {"core_metric": 0.0, "centered_results": {}}
         print0(f"Step {step:05d} | CORE metric: {results['core_metric']:.4f}")
         wandb_run.log({
             "step": step,

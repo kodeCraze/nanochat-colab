@@ -1,0 +1,49 @@
+{
+  "os": "Linux-6.6.105+-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-10-19T09:26:01.594385Z",
+  "args": [
+    "--run=colab_t4_tiny_gpt",
+    "--depth=2",
+    "--device_batch_size=2",
+    "--num_iterations=40",
+    "--eval_every=10",
+    "--core_metric_every=999999",
+    "--sample_every=10",
+    "--total_batch_size=32768",
+    "--max_seq_len=512"
+  ],
+  "program": "-m scripts.base_train",
+  "git": {
+    "remote": "https://github.com/karpathy/nanochat.git",
+    "commit": "d6d86cbf4c0bcc1de5bbab28cae1f98038d0362a"
+  },
+  "email": "binarybrain.sahil@gmail.com",
+  "root": "/content/nanochat",
+  "host": "b6982fb209a3",
+  "executable": "/content/nanochat/.venv/bin/python",
+  "cpu_count": 1,
+  "cpu_count_logical": 2,
+  "gpu": "Tesla T4",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "120942624768",
+      "used": "52104790016"
+    }
+  },
+  "memory": {
+    "total": "13605855232"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing",
+      "uuid": "GPU-a1b787f8-1d05-1caf-93b2-b295dc43c360"
+    }
+  ],
+  "cudaVersion": "12.4",
+  "writerId": "ssk0uva6m169v1awmwre9455ztov4u0u"
+}
